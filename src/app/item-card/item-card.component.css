@@ -1,0 +1,76 @@
+.mat-card-avatar {
+  background: #ca8559;
+  color: white;
+  padding: 14px 8px;
+  height: 48px;
+  width: 48px;
+  border: 1px solid white;
+}
+
+.mat-card:hover .mat-card-avatar {
+  border: 1px solid #2d2d2d;
+}
+
+::ng-deep div.mat-card-header-text {
+  margin: 0 16px;
+  color: #337ab7;
+}
+
+.month-display {
+  background-size: cover;
+}
+
+.mat-card-content {
+  height: 36px;
+  font-size: 12px;
+  overflow: auto;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,.54);
+}
+
+.mat-card {
+  padding: 16px 24px 24px 24px;
+}
+
+.mat-card-actions button {
+  font-size: 13px;
+}
+
+.util-btn-link {
+  vertical-align: baseline;
+  text-decoration: none;
+  color: currentColor;
+}
+
+mat-card-title {
+  letter-spacing: 2px;
+}
+
+.mat-card-img-container {
+  overflow: hidden;
+  margin: 0 -24px 0 -24px;
+  height: 220px;
+}
+
+.mat-card-image {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+}
+
+.mat-card-img-container img {
+  -webkit-transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition:all 800ms  cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 800ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.mat-card:hover .mat-card-img-container img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform:scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}

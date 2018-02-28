@@ -1,0 +1,37 @@
+.flip-images-container {
+  width: 85%;
+  margin: auto;
+}
+
+.flip-images-container > div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  height: 400px;
+}
+
+
+::ng-deep #home {
+  /* background: url(assets/bg-andaman.jpg) no-repeat center center fixed;
+  background-size: cover; */
+  background: url(../../assets/bg-1.png);
+  background-position: left bottom; 
+  -webkit-animation: slide 100s linear infinite;
+  -moz-animation: slide 100s linear infinite;
+  animation: slide 100s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from { background-position: left 1000%; }
+to { background-position: left 0; }
+}
+
+@keyframes slide {
+  from { background-position: left 1000%; }
+to { background-position: left 0; }
+}
+
+@-moz-keyframes slide {
+  from { background-position: left 1000%; }
+to { background-position: left 0; }
+}

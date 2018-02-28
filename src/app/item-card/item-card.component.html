@@ -1,0 +1,32 @@
+<!-- <div class="img-container">
+  <img src="{{imageurl}}" alt="" />
+  <p class="title">{{title}}</p>
+  <div class="button">
+    <a href="#"> BUTTON </a>
+  </div>
+</div> -->
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="month-display" [ngStyle]="{'background-image': 'url(' + imageurl + ')'}">{{year}}</div>
+    <mat-card-title>
+      <a href="{{ 'explore/' + title }}">{{title}}</a>
+    </mat-card-title>
+    <mat-card-subtitle>{{date}}</mat-card-subtitle>
+  </mat-card-header>
+  <div class="mat-card-img-container">
+    <img mat-card-image src="{{imageurl}}" alt="Photo of a Shiba Inu">
+  </div>
+  <mat-card-content>
+    <p>
+      {{description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="{{ 'explore/' + title }}" class="util-btn-link ">
+      <button mat-button>EXPLORE</button>
+    </a>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
